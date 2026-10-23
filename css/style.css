@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+    background-color: #ec9494;
+}
+
+.tarjeta {
+  width: 100%;
+  max-width: 900px;
+  padding: 30px;
+  border: 5px solid rgb(150, 17, 17);
+  border-radius: 20px;
+    background-color: white;
+}
+
+.pestanas {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.pestana {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 8px 12px;
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+}
+
+.pestana.activa {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.contenido {
+  display: none;
+}
+
+.contenido.activo {
+  display: block;
+}
+
+.titulo {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.caja {
+  background: rgb(158, 7, 7);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.texto {
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .tarjeta {
+    padding: 20px;
+  }
+
+  .titulo {
+    font-size: 18px;
+  }
+}
